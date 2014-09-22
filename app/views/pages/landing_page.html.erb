@@ -1,3 +1,280 @@
-<h1>Pages#landing_page</h1>
-<p>Find me in app/views/pages/landing_page.html.erb</p>
-<h1>TMS NEW Landing Page</h1>
+<!-- Carousel -->
+    <div id="carousel-front" class="carousel slide" data-ride="carousel" data-interval="7000">
+  <!-- Indicators -->
+  <ol class="carousel-indicators">
+    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+  </ol>
+
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner">
+    <div class="item active">
+      <div class="row">
+        <div class="col-lg-6">
+          <%= image_tag 'retail.jpg' %>
+          <div class="carousel-caption">
+            <h2>Wherever you go, your checkout will follow.</h2>
+            <h4>Accept paymnets, manage inventory, track sales and profitability -anytime, anywhere.</h4>
+            
+             <form roll="form" class="form-inline">
+                <div class="form-group form-block">
+                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
+                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
+                </div>
+               <div class="form-group">
+                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
+                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
+               </div>
+         
+              <button type="submit" class="btn btn-blue btn-block" style="width:80%; margin-left:40px;">Get Started</button>
+            </form> 
+      
+          </div>
+        </div>
+      </div>
+    </div>
+        
+    <div class="item">
+      <div class="row">
+       <div class="col-lg-6">
+          <%= image_tag 'restaurant.jpg' %>
+          <div class="carousel-caption">
+            <h2>Wherever you go, your checkout will follow.</h2>
+                <h4>Manage your business with detailed sales reporting and mobile dashboards.</h4>
+
+                <form roll="form" class="form-inline">
+                <div class="form-group form-block">
+                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
+                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
+                </div>
+               <div class="form-group">
+                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
+                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
+               </div>
+         
+              <button type="submit" class="btn btn-blue btn-block" style="width:80%; margin-left:40px;">Get Started</button>
+            </form> 
+          </div>
+        </div>
+      </div>
+   </div>
+    <div class="item">
+      <div class="row">
+        <div class="col-lg-6">
+         <%= image_tag 'remote.jpg' %>
+          <div class="carousel-caption">
+            <h2>Wherever you go, your checkout will follow.</h2>
+                <h4>Manage your business with detailed sales reporting and mobile dashboards.</h4>
+
+                <form roll="form" class="form-inline">
+                <div class="form-group form-block">
+                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
+                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
+                </div>
+               <div class="form-group">
+                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
+                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
+               </div>
+         
+              <button type="submit" class="btn btn-blue btn-block" style="width:80%; margin-left:40px;">Get Started</button>
+            </form> 
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carousel-front" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left"></span>
+  </a>
+  <a class="right carousel-control" href="#carousel-front" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right"></span>
+  </a>
+</div> <!--end of carousel-->
+
+
+
+    <div class="container">
+      <div class="row text-center">
+         <h2>iPad POS – the perfect POS solution for ANY small business</h2>
+      </div>
+    
+
+     <div class="container" id="main">
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <div class="main-info">
+             <div class="main-info2">
+              <h3>Ring Up <br>
+                Sales</h3>
+             </div>
+
+          <h3>Ring up sales anywhere and get consolidated real-time reporting</h3>
+          </div>
+        <p><a class="btn btn-default maininfobtn btn-block" href="#" role="button">Learn more &raquo;</a></p>
+
+        </div>
+        
+        <div class="col-md-3 text-center">
+          <div class="main-info">
+             <div class="main-info2">
+              <h3>Loyalty Made <br>
+               Easy</h3>
+             </div>
+
+          <h3>Fully integrated and easy to setup and run</h3>
+          </div>
+        <p><a class="btn btn-default maininfobtn btn-block" href="#" role="button">Learn more &raquo;</a></p>
+
+        </div>
+
+
+        <div class="col-md-3 text-center">
+          <div class="main-info">
+             <div class="main-info2">
+              <h3>Email Marketing <br>
+                &amp; Social Media</h3>
+             </div>
+
+          <h3>Market to your existing and new customers</h3>
+          </div>
+        <p><a class="btn btn-default maininfobtn btn-block" href="#" role="button">Learn more &raquo;</a></p>
+        </div>
+
+
+          
+        <div class="col-md-3 text-center">
+          <div class="main-info">
+             <div class="main-info2">
+              <h3>Easy Multi-store Setup <br>
+                &amp; Management</h3>
+             </div>
+
+          <h3>Manage all your stores easily with one back office</h3>
+          </div>
+        <p><a class="btn btn-default maininfobtn btn-block" href="#" role="button">Learn more &raquo;</a></p>
+          </div>
+ 
+      </div><!--end main info 1 row-->
+      </div> <!--end main info 1 container-->
+  
+
+  <div class="container">
+     <div class="row">
+      <div class="col-md-6">
+        <h2>Growing your business just got easier</h2>
+        <h4>It's time to harness the power of a smarter POS solution</h4>
+        <hr>
+        <p><strong> Vantiv Mobile Checkout is an affordable, tablet-based, cloud-connected POS solution featuring:</strong></p>
+        <div class="col-md-6"> <!--video-->
+          <ul>
+            <li> Out-of-the-box, plug-and-play technology</li>
+            <li> Bundled hardware peripherals</li>
+            <li> Back-office management tools</li>
+            <li> Integrated email marketing</li>
+            <li> Phone support</li>
+            
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <ul>
+            <li> Hardware replacement</li>
+            <li> Fixed-location</li>
+            <li> Mobile capabilities</li>
+            <li> Integrated payment processing</li>
+          </ul>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <iframe width="560" height="315" src="//www.youtube.com/embed/-7zHU-C6BK0?list=UU8QnVxYRKhfpYYdvPQW0VlA" frameborder="0" allowfullscreen></iframe>
+      </div>
+    </div>
+  </div> <!--end vido section-->
+
+  <div class="container starterpk">
+     <div class="row">
+      <div class="col-md-6">
+        <%= image_tag 'VMCbasicsetup.png' %>
+      </div>
+       <div class="col-md-6">
+        <h2>Starter Package:</h2>
+        <div class="yellowbox">
+          <h4><ul>
+            <li>Lifetime software upgrades for unlimited users*</li><br>
+            <li>POS Hardware and iPad Lease Options</li><br>
+            <li>Free Hardware Shipping And Replacement**</li>
+          </ul></h4>
+        </div>
+       
+        <div class="col-md-6" style="padding:3%">
+          <ul class="list-unstyled icon-list checkmark">
+            <li> Integrated and secure Vantiv payment processing</li><br>
+            <li> Email and customer marketing tools</li>
+         </ul>
+        </div>
+        <div class="col-md-6" style="padding:3%">
+          <ul class="list-unstyled icon-list checkmark">
+             <li>Back office analytics and reporting tools</li><br>
+              <li>Live support seven days a week</li>
+          </ul>
+           <br>
+          <div class="text-center">
+             <button type="submit" class="btn btn-blue" style="position:center;">Get Started</button>
+          </div>
+        </div>
+        <br>
+         
+      </div>
+     </div>
+  </div> <!--end starter package-->
+</div>
+
+  <div class="row-fluid parallax" data-stellar-background-ratio="0.5">
+  
+  </div> 
+
+
+<div class="container grow">
+  <div class="row">
+    <div class="col-md-4">
+      <%= image_tag 'grow.jpg' %> 
+       <h4>Now it's simple to engage your customers anytime, anywhere. </h4>
+    </div>
+    <div class="col-md-4">
+        <%= image_tag 'know.jpg' %>
+        <h4>Powerful, robust back-office tools and tracking inventory are just the beginning.</h4>
+    </div>
+    <div class="col-md-4">
+        <%= image_tag 'save.jpg' %>
+        <h4>Ready to make your business more powerful – get  with a more affordable solution with Vantiv Mobile Checkout.</h4>
+    </div>
+  </div><!--end row-->
+</div><!--end container grow-->
+<div class="container-fluid signUp">
+  <div class="row">
+    <div class="col-md-6 center-block" style="float:none; text-align:center;">
+      <h3>Get started today</h3>
+      <h4>Call us at 1-888-952-3600 <br>
+          Available 9 a.m. to 6 p.m. ET Mon - Fri <br></h4>
+
+          <h3>Order Now!</h3> <br>
+
+            <form roll="form" class="form-inline">
+                <div class="form-group form-block">
+                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
+                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
+                </div>
+               <div class="form-group">
+                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
+                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
+               </div>
+                <br>
+              <button type="submit" class="btn btn-blue" style="text-align: center;">Get Started</button>
+              <br>
+            </form> 
+            <br>
+    </div>
+  </div>
+</div>
