@@ -1,6 +1,6 @@
 /* Move down content because we have a fixed navbar that is 50px tall */
 body {
-  padding-top: 50px;
+  padding-top: 100px;
   padding-bottom: 20px;
 }
 .navbar {
@@ -44,6 +44,7 @@ body {
 .carousel-inner img {
 	padding-top:50px;
 	height: 550px;
+	margin-top: -50px;
 	
 	
 	
@@ -272,3 +273,24 @@ fieldset[disabled] .btn-blue.active {
   color: #3A7CC0; 
   background-color: #FFFFFF; 
 }
+
+.container .pricing-top {
+	padding-top: 50px;
+}
+.container .pricing-top img{
+	height: 250px; 
+	margin-top: -75px;
+}
+.equipment  img {
+	height: 150px;
+}
+
+.bluebox {
+	background-color: #E6F2FD;
+	border-top-style: solid;
+	border-bottom-style: solid;
+    border-width: 2px;
+	border-color: #8e959b;
+	text-align: center;
+
+	}
