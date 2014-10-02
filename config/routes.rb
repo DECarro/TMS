@@ -1,17 +1,18 @@
 Rails.application.routes.draw do
   
+  root 'pages#landing_page'
   
-  get 'pages/landing_page'
+  get 'landing_page', to: 'pages#landing_page'
 
-  get 'pages/contact'
+  get 'contact', to: 'pages#contact'
 
-  get 'pages/about'
+  get 'about', to: 'pages#about'
 
-  get 'pages/pricing'
+  get 'pricing', to: 'pages#pricing'
 
-  get 'pages/features'
+  get 'features', to: 'pages#features'
 
-  get 'pages/get_started'
+  get 'get_started', to: 'pages#get_started'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
