@@ -26,7 +26,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-         <div class="navbar-brand"><%= link_to image_tag('logo.png'), 'landing_page'  %>
+         <div class="navbar-brand"><%= link_to image_tag('logo.png'), '/landing_page'  %>
          </div>
         </div>
 <div class="navbar-collapse collapse">
@@ -39,9 +39,16 @@
           <div class="row">
            <ul class="list-inline rightnav">
             
-            <li><%= link_to 'Features', 'features' %></li>
-            <li><%= link_to 'Pricing', 'pricing' %></li>
-            <li><%= link_to 'Get Started', 'get_started' %></li>
+            <li><%= link_to 'Features', '/features' %></li>
+            <li><%= link_to 'Pricing', '/pricing' %></li>
+            <li><%= link_to 'Get Started', '/get_started' %></li>
+            &nbsp; &nbsp; &nbsp; &nbsp;
+            <% if user_signed_in? %>
+            <li class="sign_in"><%= link_to 'log out', destroy_user_session_path, method: :delete %></li>
+            <% else %>
+            <li class="sign_in"><%= link_to "Sign Up", new_user_registration_path %></li>
+            <li class="sign_in"><%= link_to "Sign In", new_user_session_path %></li>
+            <%end%>
           	</ul>
         	</div>
           </div>
@@ -57,12 +64,13 @@
          <footer>
           <ul class="list-inline">
             
-            <li><%= link_to 'Home', 'landing_page' %></li>
-            <li><%= link_to 'Features', 'features' %></li>
-            <li><%= link_to 'Pricing', 'pricing' %></li>
-             <li><%= link_to 'Get Started', 'get_started' %></li>
-            <li><%= link_to 'About', 'about' %></li>
-            <li><%= link_to 'Contact', 'contact' %></li>
+            <li><%= link_to 'Home', '/landing_page' %></li>
+            <li><%= link_to 'Features', '/features' %></li>
+            <li><%= link_to 'Pricing', '/pricing' %></li>
+             <li><%= link_to 'Get Started', '/get_started' %></li>
+            <li><%= link_to 'About', '/about' %></li>
+            <li><%= link_to 'Contact', '/contact' %></li>
+             <li><%= link_to 'Merchants', '/users/sign_up' %></li>
          
 
            

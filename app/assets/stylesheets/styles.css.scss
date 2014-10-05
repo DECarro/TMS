@@ -2,6 +2,7 @@
 body {
   padding-top: 100px;
   padding-bottom: 20px;
+  padding-left: 20px;
 }
 .navbar {
 	background-color:#393939;
@@ -40,27 +41,32 @@ body {
 	color: 	#B9B9B9;
 }
 
+.list-inline.rightnav .sign_in {
+	font-size: 1em;
+	
+}
+.list-inline.rightnav .sign_in a {
+	color:#3a7cc0;
+}
 
 .carousel-inner img {
 	padding-top:50px;
 	height: 550px;
 	margin-top: -50px;
-	
-	
+	margin-left: -50px;
 	
 }
 .carousel {
 	margin-bottom: 50px;
+	margin-left: -20px;
 }
 
 
 .carousel-caption {
 	bottom: 125px;
+	
 }
 
-.carousel-caption img {
-	margin-top: 20px;
-}
 
 .carousel-caption .form-inline .form-group input {
 	margin-top:10px;
@@ -182,6 +188,15 @@ body {
 
 }
 
+.container .processing_fees {
+	background-color: #FFFEFE;
+	border-style: solid;
+	border-color: #A99E93;
+	border-width: 1px;
+	height: 600px;
+	width: 575px;
+
+}
 .btn-gold { 
   color: #FFFFFF; 
   background-color: #D49F46; 
