@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
+  mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :users, only: [:edit, :update, :show]
   
-  devise_for :users
+  devise_for :users, :controllers => {:registrations => "registrations"}
+
   root 'pages#landing_page'
   
   get 'landing_page', to: 'pages#landing_page'

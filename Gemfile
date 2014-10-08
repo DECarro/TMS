@@ -16,6 +16,10 @@ gem 'devise'
 
 gem 'cancancan', '~> 1.9'
 
+gem 'rails_admin'
+
+gem 'rollbar', '~> 1.1.0'
+
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
