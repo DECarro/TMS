@@ -3,5 +3,6 @@ class RegistrationsController < Devise::RegistrationsController
 		if resource_name.constantize.count ==1
 			resource.update_attribute(:is_admin, true)
 		end
+	end
 		super
 end
