@@ -16,4 +16,9 @@ class PagesController < ApplicationController
 
   def get_started
   end
+
+  def shop
+    @products = Product.all
+  end
+
 end

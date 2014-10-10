@@ -1,7 +1,7 @@
-class UsersController < ApplicationController
+class UsersController <ApplicationController
 
+	
 	authenticate_user!
-
 	load_and_authorize_resource 
 	 
 	 def show
@@ -16,7 +16,7 @@ class UsersController < ApplicationController
 	 	@user.update_attributes(user_params)
 	 	
 	 end
-
+	
 
 	 private
 

@@ -1,7 +1,10 @@
 Rails.application.routes.draw do
+  resources :products
+
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :users, only: [:edit, :update, :show]
   
+
   devise_for :users, :controllers => {:registrations => "registrations"}
 
   root 'pages#landing_page'
@@ -17,6 +20,8 @@ Rails.application.routes.draw do
   get 'features', to: 'pages#features'
 
   get 'get_started', to: 'pages#get_started'
+
+  get 'shop', to: 'pages#shop'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

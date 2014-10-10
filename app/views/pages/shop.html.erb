@@ -1,0 +1,22 @@
+
+<div class="container shop">
+	<h4>Shop Shop Shop</h4>
+	<table class="table">
+	      	<tr>
+		      	<th>Name</th>
+		      	<th>Price</th>
+		      	<th>Image</th>
+		    </tr>  
+      	
+ 	 
+ 	 	<tbody>
+ 	 	<% @products.each do |product| %>
+	    	<tr>
+		        <td><%= link_to product.name, product %></td>
+		        <td><%= product.price %></td>
+		        <td class="shop"><%= image_tag (product.image_url) %></td>
+	    	</tr>
+       <%end%>
+      </tbody>
+   	</table>
+</div>

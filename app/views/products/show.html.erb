@@ -1,0 +1,54 @@
+<p id="notice"><%= notice %></p>
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 show">
+       
+        <%= image_tag (@product.image_url) %>
+    
+    </div>
+    <div class="col-md-8">
+      <p>
+        <strong>Name:</strong>
+        <%= @product.name %>
+      </p>
+
+      <p>
+        <strong>Price:</strong>
+        <%= @product.price %>
+      </p>
+      <p>
+        <strong>Cost:</strong>
+        <%= @product.cost %>
+      </p>
+
+      <p>
+        <strong>Manufacture part:</strong>
+        <%= @product.manufacture_part %>
+      </p>
+
+      <p>
+        <strong>TMS ID:</strong>
+        <%= @product.tms_id %>
+      </p>
+
+      <p>
+        <strong>Quick overview:</strong>
+        <%= @product.quick_overview %>
+      </p>
+
+      <p>
+        <strong>Read more:</strong>
+        <%= @product.read_more %>
+      </p>
+
+      <p>
+        <strong>Description:</strong>
+        <%= @product.description %>
+      </p>
+    </div>
+  </div>
+
+<%= link_to 'Edit', edit_product_path(@product) %> |
+<%= link_to 'Back', '/shop' %>
+
+</div>
