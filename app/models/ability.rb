@@ -10,8 +10,9 @@ class Ability
     if user.is_admin?
         can :access, :rails_admin
         can :dashboard
-    
     end
+    end
+
 
     #     can :manage, :all
     #   else
@@ -36,4 +37,4 @@ class Ability
     # See the wiki for details:
     # https://github.com/CanCanCommunity/cancancan/wiki/Defining-Abilities
   end
-end
+
