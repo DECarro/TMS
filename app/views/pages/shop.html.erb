@@ -1,22 +1,29 @@
 
 <div class="container shop">
-	<h4>Shop Shop Shop</h4>
-	<table class="table">
-	      	<tr>
-		      	<th>Name</th>
-		      	<th>Price</th>
-		      	<th>Image</th>
-		    </tr>  
-      	
- 	 
- 	 	<tbody>
- 	 	<% @products.each do |product| %>
-	    	<tr>
-		        <td><%= link_to product.name, product %></td>
-		        <td><%= product.price %></td>
-		        <td class="shop"><%= image_tag (product.image_url) %></td>
-	    	</tr>
-       <%end%>
-      </tbody>
-   	</table>
+	<div class="row">
+		<div class="col-md-8">
+		<h4>Shop Shop Shop</h4>
+			<table class="table">
+			      	<tr>
+				      	<th>Name</th>
+				      	<th>Price</th>
+				      	<th>Image</th>
+				    </tr>  
+		      	
+		 	 
+		 	 	<tbody>
+		 	 	<% @products.each do |product| %>
+			    	<tr>
+				        <td><%= link_to product.name, product %></td>
+				        <td><%= product.price %></td>
+				        <td class="shop"><%= image_tag (product.image_url) %></td>
+			    	</tr>
+		       <%end%>
+		      </tbody>
+		   	</table>
+   		</div>
+   		<div class="col-md-4">
+   			<h4> something to be refreshed here</h4>
+   		</div>
+   	</div>
 </div>

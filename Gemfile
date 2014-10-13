@@ -20,6 +20,10 @@ gem 'rails_admin'
 
 gem 'rollbar', '~> 1.1.0'
 
+group :development, :test do
+  gem 'rspec-rails', '~> 3.0.0'
+end
+
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
