@@ -12,7 +12,7 @@ class Ability
         can :dashboard
     end
     end
-
+    end
 
     #     can :manage, :all
     #   else
