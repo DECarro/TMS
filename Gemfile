@@ -29,6 +29,20 @@ end
 
 gem "factory_girl_rails", "~> 4.0"
 
+group :development do
+  gem 'guard'
+end
+
+group :development do
+gem 'guard-rspec', require: false
+end
+
+gem "spork-rails"
+
+group :development do
+  gem 'guard-spork'
+end
+
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
