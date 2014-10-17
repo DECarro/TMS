@@ -2,7 +2,7 @@ Rails.application.routes.draw do
   resources :products
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
-  resources :users, only: [:edit, :update ]
+  resources :users, only: [:edit, :update, :show ]
   
 
   devise_for :users, :controllers => {:registrations => "registrations"}

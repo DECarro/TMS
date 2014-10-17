@@ -3,16 +3,16 @@ require 'rails_helper'
 describe UsersController do
 	
 	before do
-		@user = User.create(first_name: "David", last_name: "Smith", email: "davidsmith@email.com")
+		@user = User.create!(first_name: "David", last_name: "Smith", email: "davidsmith@email.com", password: "password")
 	end
 
 describe "GET show" do
-	context "User is logged in"do
+	context "User is logged in" do
 	before do
-		session[:user_id]= @user.user_id
+		sign_in @user
 	end
 	it "should load the correct user details" do
-		get:show
+		get:show, id:@user.id
 		expect(response.status).to eq 200
 		expect(assigns(:user)).to eq @user
 	end
@@ -20,8 +20,8 @@ describe "GET show" do
 
     context "No user is logged in" do
     	it "should redirect to login" do
-    		get:show
-    		expect(response).to redirect_to(sign_up_path)
+    		get:show, id:@user.id
+    		expect(response).to redirect_to(new_user_session_path)
     	end
     end
 end	
