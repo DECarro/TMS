@@ -19,7 +19,9 @@ Rails.application.routes.draw do
 
   get 'features', to: 'pages#features'
 
-  post 'get_started', to: 'pages#get_started'
+  post 'get_started_email', to: 'pages#get_started_email'
+
+  get 'get_started', to: 'pages#get_started'
 
   get 'shop', to: 'pages#shop'
 

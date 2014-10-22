@@ -15,14 +15,14 @@ class PagesController < ApplicationController
   def features
   end
 
-  def get_started
+  def get_started_email
     name = params['name']
     store_name = params['store_name']
     phone_number = params['phone_number']
     email = params['email_address']
 
-    ContactMailer.get_started_email(:from => email, :subject => name + " from" + store_name + " wants to get started", :body => body).deliver
-    
+    ContactMailer.get_started_email(:from => email, :subject => name + " from " + store_name + " wants to get started", :body => phone_number).deliver
+    redirect_to '/get_started'
   end
 
   def shop

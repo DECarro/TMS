@@ -3,7 +3,29 @@ body {
   padding-top: 100px;
   padding-bottom: 20px;
   padding-left: 20px;
+  font-family: Georgia, Helvetica, sans-serif;
 }
+h1 {
+	 text-transform: uppercase;
+	 color: #00376D;
+}
+h2 {
+	 
+	 
+}
+h3 {
+	
+	
+}
+h4 {
+	 
+	
+}
+
+p {
+	
+}
+
 .navbar {
 	background-color:#393939;
 }
@@ -51,7 +73,7 @@ body {
 
 .nav.nav-pills.nav-justified {
 	background-color: #737373;
-	margin-left: -20px;
+	
 	margin-top: 50px;
 	
 }
@@ -128,6 +150,11 @@ body {
 	padding-left:25px;
 	padding-right:25px;
 }
+
+#email {
+	background-image: asset-url('email.jpg', image);
+}
+
 .btn.btn-default.maininfobtn {
 	background-color:#d49f46;
 	color:white;
@@ -182,6 +209,7 @@ body {
   background-image: asset-url('backgroundicon.jpg', image);
   height: 150px;
   margin-bottom: 50px;
+  margin-left: -20px;
   text-align: center;
   color: white;
   opacity:0.5;
@@ -192,6 +220,7 @@ body {
 }
 .container-fluid.signUp {
 	margin-top:50px;
+	margin-left: -20px;
 	padding:25px;
 	color:white;
 	background-image: asset-url('backgroundc.jpg', image);
@@ -219,8 +248,53 @@ body {
 .small_text  {
 	font-size: .85em;
 }
+.container-fluid.features-top img {
+	height:400px;
+}
 
 
+
+.col-centered {
+    float: none;
+    margin: 0 auto;
+}
+
+.container-fluid.center-img {
+	
+	margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%)
+}
+
+.container.feautre-list {
+	margin: 50px;
+}
+
+.feature-list-icon {
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+.feature-list-icon-lf {
+	padding-top:5px;
+	padding-bottom:25px;
+
+}
+.features-video {
+	height: 200px;
+}
+
+.container-fluid.features-row {
+	padding:20px;
+	margin-top:50px;
+}
+
+.container.support img {
+	height: 200px;
+}
 .shop img{
 	height: 50px;
 }

@@ -1,5 +1,5 @@
 <!-- Carousel -->
-    <div id="carousel-front" class="carousel slide" data-ride="carousel" data-interval="7000">
+    <div id="carousel-front" class="carousel slide" data-ride="carousel" data-interval="10000">
   <!-- Indicators -->
   <ol class="carousel-indicators">
     <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
@@ -15,7 +15,7 @@
           <%= image_tag 'retail.jpg' %>
           <div class="carousel-caption caption">
             
-            <h2>Wherever you go, your checkout will follow.</h2>
+            <h2>Wherever you go, your checkout will follow</h2>
             <h4>Accept paymnets, manage inventory, track sales and profitability -anytime, anywhere.</h4>
             
              <%= render 'form_get_started' %>
@@ -30,21 +30,10 @@
        <div class="col-lg-6">
           <%= image_tag 'restaurant.jpg' %>
           <div class="carousel-caption">
-            <h2>Wherever you go, your checkout will follow.</h2>
+            <h2>Wherever you go, your checkout will follow</h2>
                 <h4>Manage your business with detailed sales reporting and mobile dashboards.</h4>
 
-                <form roll="form" class="form-inline">
-                <div class="form-group form-block">
-                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
-                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
-                </div>
-               <div class="form-group">
-                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
-                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
-               </div>
-         
-              <button type="submit" class="btn btn-blue btn-block" style="width:80%; margin-left:40px;">Get Started</button>
-            </form> 
+                <%= render 'form_get_started' %>
           </div>
         </div>
       </div>
@@ -54,21 +43,10 @@
         <div class="col-lg-6">
          <%= image_tag 'remote.jpg' %>
           <div class="carousel-caption">
-            <h2>Wherever you go, your checkout will follow.</h2>
+            <h2>Wherever you go, your checkout will follow</h2>
                 <h4>Manage your business with detailed sales reporting and mobile dashboards.</h4>
 
-                <form roll="form" class="form-inline">
-                <div class="form-group form-block">
-                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
-                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
-                </div>
-               <div class="form-group">
-                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
-                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
-               </div>
-         
-              <button type="submit" class="btn btn-blue btn-block" style="width:80%; margin-left:40px;">Get Started</button>
-            </form> 
+               <%= render 'form_get_started' %>
           </div>
         </div>
     </div>
@@ -88,7 +66,7 @@
 
     <div class="container">
       <div class="row text-center">
-         <h2>iPad POS – the perfect POS solution for ANY small business</h2>
+         <h1>iPad POS <br> The perfect POS solution for ANY small business</h1>
       </div>
     
 
@@ -124,11 +102,11 @@
         <div class="col-md-3 text-center">
           <div class="main-info">
              <div class="main-info2">
-              <h3>Email Marketing <br>
+              <h3 >Email Marketing <br>
                 &amp; Social Media</h3>
              </div>
 
-          <h3>Market to your existing and new customers</h3>
+          <h3 >Market to your existing and new customers</h3>
           </div>
         <p><a class="btn btn-default maininfobtn btn-block" href="/features" role="button">Learn more &raquo;</a></p>
         </div>
@@ -251,19 +229,7 @@
 
           <h3>Order Now!</h3> <br>
 
-            <form roll="form" class="form-inline">
-                <div class="form-group form-block">
-                  <label for="name"></label> <input type="text" id="name" name="name"placeholder="Name"><br>
-                  <label for="storename"></label> <input type="text" id="storename" name="store_name" placeholder="Store Name"><br>
-                </div>
-               <div class="form-group">
-                <label for="phonenumber"></label> <input type="tel" id="phonenumber" name="phone_number" placeholder="Phone Number"><br>
-                 <label for="emailaddress"></label> <input type="text" id="storename" name="email_address" placeholder="Email Address"><br>
-               </div>
-                <br>
-              <button type="submit" class="btn btn-blue" style="text-align: center;">Get Started</button>
-              <br>
-            </form> 
+            <%= render 'form_get_started' %>
             <br>
     </div>
   </div>

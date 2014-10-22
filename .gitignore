@@ -18,3 +18,5 @@
 # Ignore for security
 *.env
 
+development.rb
+

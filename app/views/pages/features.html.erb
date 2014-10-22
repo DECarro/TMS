@@ -9,32 +9,164 @@
 
 
 
-<div class="container-fluid features_top">
+<div class="container-fluid features-top">
 	<div class="row">
-
+		<div class="col-md-12 col-centered text-center">
+		<h3>Know Grow Save</h3>
+		<h4>A full suite of products packed into one solution</h4>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-offset-1  col-centered">
+		<%= image_tag 'full-package.jpg' %>
+		</div>
 	</div><!--end row-->
+	<div class="row">
+	<div class="container feautre-list">
+		<div class="col-md-5 text-right">
+			<table>
+			<th class="text-right"> Inventory Management</th>
+			<tr><td>Know which itms are your best sellers to keep them in stock</td><tr>
+			<th class="text-right">Multi-Store Management</th>
+			<tr><td>Managing multiple locations dosen't have to be so complicated</td></tr>
+			<th class="text-right">Consolidated Reporting</th>
+			<tr><td>Track sales and cash-for all locations-form anywhere</td></tr>
+			</table>
+		</div>	
+		<div class="col-md-1 text-left">
+			<table>
+			<tr><td><span class="glyphicon glyphicon-check feature-list-icon-lf"></span></td></tr>
+			<tr><td><span class="glyphicon glyphicon-tags feature-list-icon"></span></td></tr>
+			<tr><td><span class="glyphicon glyphicon-tasks feature-list-icon"></span></td></tr>
+			</table>
+		</div>
+		<div class="col-md-1">
+			<table>
+			<tr><td><span class="glyphicon glyphicon-lock feature-list-icon"></span></td></tr>
+			<tr><td><span class="glyphicon glyphicon-calendar feature-list-icon"></span></td></tr>
+			<tr><td><span class="glyphicon glyphicon-phone-alt feature-list-icon"></span></td></tr>
+			</table>
+		</div>
+		<div class="col-md-5text-left text-left">
+			<table>
+			<th> Advanced Security</th>
+			<tr><td>Get fraud alerts and end-to-end payment encryption</td><tr>
+			<th>Employee Management</th>
+			<tr><td>Assign roles and track employee time with clock-in/clock-out/td></tr>
+			<th>Live Support 7 Days a Week</th>
+			<tr><td>We're here 24/7</td></tr>
+			</table>
+		</div>
+	</div> <!--end feature list container-->	
 </div><!--end features top container-->
 
-<div class="container-fluid features_ring" id="ring">
+<div class="container-fluid features-row" id="ring">
 	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<h3>Ring Up Sales</h3>
+				<ul>
+					<li>Cloud-based Register App</li>
+					<li>Quick charge function</li>
+					<li>Payment Processing</li>
+					<li>Change line item quantity</li>
+					<li>Apply discounts</li>
+					<li>Override pricing</li>
 
+				</ul>
+		</div>
+		<div class="col-md-6">
+			<div class="container">
+				<iframe  class="features-video" src="//www.youtube.com/embed/4SvrtseaZHM?list=PL-js2VJiZHzmmCVyh9tlpmv8lZOpaxy24" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div><!--end row-->
 </div><!--end features ring container-->
 
-<div class="container-fluid features_manage" id="manage">
+<div class="container-fluid features-row" id="manage">
 	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<div class="container">
+				<iframe class="features-video"  src="//www.youtube.com/embed/LOQQasSKlC4?list=PL-js2VJiZHzmmCVyh9tlpmv8lZOpaxy24" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3>Manage Your Business</h3>
+				<ul>
+					<li>Sales Trends</li>
+					<li>Profitability</li>
+					<li>Top/Bottom Items</li>
+					<li>Tax report</li>
+					<li>Cash Management</li>
+					<li>Data Exports</li>
 
+				</ul>
+		</div>
+		
 	</div><!--end row-->
 </div><!--end features manage container-->
 
-<div class="container-fluid features_grow" id="grow">
+<div class="container-fluid features-row" id="grow">
 	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<h3>Grow Your Business with Customer Marketing</h3>
+				<ul>
+					<li>Completely Integrated</li>
+					<li>Target Offers/Messages</li>
+					<li>Built in Campaigns</li>
+					<li>Customizable Loyalty Programs</li>
+					<li>Social Media Integration</li>
+					<li>Coupons on Receipts</li>
 
+				</ul>
+		</div>
+		<div class="col-md-6">
+			<div class="container">
+				<iframe class="features-video"  src="//www.youtube.com/embed/eKwOZm-iHQ8?list=PL-js2VJiZHzmmCVyh9tlpmv8lZOpaxy24" frameborder="0" allowfullscreen></iframe>
+			</div>
+		</div>
 	</div><!--end row-->
 </div><!--end features grow container-->
 
-<div class="container-fluid features_support" id:="support">
+<div class="container-fluid features-row" id="support">
 	<div class="row">
+		<div class="col-md-4 col-md-offset-1">
+			<div class="container support">
+				<%= image_tag 'support.jpg' %>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<h3>Support When You Need It</h3>
+				<ul>
+					<li>Technical issues and questions</li>
+					<li>Using the App and Back Office</li>
+					<li>How to get the most out of Vantiv Mobile Checkout</li>
+					<li>US-based call center, skill set training</li>
+					<li>Live support available 7 days a week</li>
+				</ul>
+			<h3>Need a little more assistance?</h3>
+
+			<button class="btn btn-primary btn-lg" data-toggle="modal" data-target="#conciergeModal"> Checkout our Concierge Set-up Service</button>
+
+<!-- Modal -->
+				<div class="modal fade" id="conciergeModal" tabindex="-1" role="dialog" aria-labelledby="conciergeModalLabel" aria-hidden="true">
+  					<div class="modal-dialog">
+    					<div class="modal-content">
+      						<div class="modal-header">
+        						<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+       								 <h4 class="modal-title" id="conciergeModalLabel">Concierge Set-up Service</h4>
+      						</div>
+     						 <div class="modal-body">
+       							<%= image_tag 'concierge.jpg' %>
+      						</div>
+     						<div class="modal-footer">
+        						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+       
+      						</div>
+   						 </div>
+  					</div>
+				</div>
+			
+			</div>
 
 	</div><!--end row-->
 </div><!--end features support container-->
