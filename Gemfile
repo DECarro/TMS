@@ -45,6 +45,8 @@ group :development do
   gem 'guard-spork'
 end
 
+gem 'stripe'
+
 gem 'sass-rails', '~> 4.0.3'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'

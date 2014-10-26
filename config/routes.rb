@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
   resources :products
+  resources :charges
 
   mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   resources :users, only: [:edit, :update, :show ]
