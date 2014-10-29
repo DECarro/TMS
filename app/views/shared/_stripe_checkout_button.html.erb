@@ -1,10 +1,11 @@
-<% @products.each do |product| %>
+
+<form action="/charge" method="POST">
 	<script
 	    src="https://checkout.stripe.com/checkout.js" class="stripe-button"
 	    data-key= "<%= Rails.configuration.stripe[:publishable_key] %>"
-	    data-image= "/logo.png"
+	    data-image= "images/logosquare.png"
 	    data-name="Tri-State Merchant"
 	    data-description="<%= product.name %>"
 	    data-amount="<%= product.price %>">
 	  </script>
-  <%end%>
+</form>

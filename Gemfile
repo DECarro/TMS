@@ -25,6 +25,8 @@ gem 'rollbar', '~> 1.1.0'
 gem 'memcachier'
 gem 'dalli'
 
+gem 'figaro'
+
 group :development, :test do
   gem 'rspec-rails', '~> 3.0.0'
 end

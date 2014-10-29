@@ -19,10 +19,10 @@
 				        <td><%= product.price %></td>
 				        <td class="shop"><%= image_tag (product.image_url) %></td>
 				       
-				        <td> <%= render partial: "shared/stripe_checkout_button" %> </td>
-		       			 <%end%>	
+				        <td> <%= render partial: "shared/stripe_checkout_button", locals: {product: product} %> </td>
+		       				
 			    	</tr>
-		   
+		   			 <%end%>
 		      
 		      </tbody>
 		   	</table>
