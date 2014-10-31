@@ -11,11 +11,11 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20141014234800) do
+ActiveRecord::Schema.define(version: 20141031153353) do
 
   create_table "products", force: true do |t|
     t.string   "name"
-    t.decimal  "price"
+    t.integer  "amount"
     t.string   "manufacture_part"
     t.string   "tms_id"
     t.text     "quick_overview"

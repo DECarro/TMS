@@ -1,19 +1,31 @@
 class ChargesController < ApplicationController
-
+skip_before_filter  :verify_authenticity_token, :authenticate_user!
 	def new
 	end
 
 	def create
-		#ammount in cents
-		@amount = 500
+		#amount in cents
+		
 
 		customer = Stripe::Customer.create(
 			:email => 'example@stripe.com',
-			:card => params[:stripeToken]
+			:card => params[:stripeToken],
+			#:first_name => "FirstName",
+			#:last_name => "LastName",
+			#:billing_address => "BillingAddress",
+			#:billing_city => "City",
+			#:billing_state => "State",
+			#:billing_zip => "zip",
+			#:shipping_address => "BillingAddress",
+			#:shipping_city => "City",
+			#:shipping_state => "State",
+			#:shipping_zip => "zip"
+
+
 			)
 		charge = Stripe::Charge.create(
 			:customer => customer.id,
-			:amount => @amount,
+			:amount => params[:amount],
 			:description => 'Rails Stripe customer',
 			:currency => 'usd'
 			)

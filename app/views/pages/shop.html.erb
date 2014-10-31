@@ -16,7 +16,7 @@
 		 	 	<% @products.each do |product| %>
 			    	<tr>
 				        <td><%= link_to product.name, product %></td>
-				        <td><%= product.price %></td>
+				        <td><%= product.amount %></td>
 				        <td class="shop"><%= image_tag (product.image_url) %></td>
 				       
 				        <td> <%= render partial: "shared/stripe_checkout_button", locals: {product: product} %> </td>
