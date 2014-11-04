@@ -7,6 +7,8 @@
 	</div> 
 </div>
 
-<script>
-$('.datepicker').pickadate()
+<script> $('.datepicker').pickadate(
+	{
+    format: 'You selected: dddd, dd mmm, yyyy',
+    formatSubmit: 'yyyy/mm/dd'});
 </script>
