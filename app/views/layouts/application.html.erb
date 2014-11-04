@@ -6,6 +6,9 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 	<link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.11.2/themes/smoothness/jquery-ui.css">
+
  	 <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
 
 
@@ -37,7 +40,7 @@
             <div class="row">
              <p>Questions? Call us at 1-888-952-3600 or <a href="mailto:sales@tmsmerchant.com?subject=Please Contact me about VMC">contact us.</a>
 
-              <button type="submit" class="btn btn-gold">Sign up for a demo</button>
+              <a type="submit" class="btn btn-gold" href="/demo">Sign up for a demo</a>
             </div>
           <div class="row">
            <ul class="list-inline rightnav">
@@ -90,7 +93,7 @@
      
   <script type="text/javascript">
   var $root = $('html, body');
-    $('.navbar-nav a').click(function() {
+    $('.nav a').click(function() {
         var href = $.attr(this, 'href');
         $root.animate({
             scrollTop: $(href).offset().top
@@ -103,5 +106,7 @@
     
     <script type="text/javascript" src="https://js.stripe.com/v2/"></script>
 
+
+  
 </body>
 </html>

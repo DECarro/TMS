@@ -1,8 +1,9 @@
 FactoryGirl.define do
-  factory :client do
-    name 'Google'
-    company_size_id 1
-    account { FactoryGirl.build(:setup_account) }
+  factory :product do
+    name 'Equipment'
+    amount '500'
+    cost '400'
+   
   end  
 end
 
@@ -10,6 +11,7 @@ end
 FactoryGirl.define do
   factory :user do
     email 'google@google.com'
-    password 'pass'
+    password '12345678'
+
   end  
 end

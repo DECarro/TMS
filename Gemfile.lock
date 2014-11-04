@@ -30,6 +30,10 @@ GEM
     arel (5.0.1.20140414130214)
     bcrypt (3.1.7)
     builder (3.2.2)
+    byebug (3.5.1)
+      columnize (~> 0.8)
+      debugger-linecache (~> 1.2)
+      slop (~> 3.6)
     cancancan (1.9.2)
     celluloid (0.16.0)
       timers (~> 4.0.0)
@@ -43,7 +47,9 @@ GEM
       coffee-script-source
       execjs
     coffee-script-source (1.8.0)
+    columnize (0.8.9)
     dalli (2.7.2)
+    debugger-linecache (1.2.0)
     devise (3.3.0)
       bcrypt (~> 3.0)
       orm_adapter (~> 0.1)
@@ -246,6 +252,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  byebug
   cancancan (~> 1.9)
   coffee-rails (~> 4.0.0)
   dalli

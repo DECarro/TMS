@@ -28,6 +28,10 @@ Rails.application.routes.draw do
 
   post 'charge', to: 'charges#create'
 
+  get 'demo', to: 'pages#demo'
+
+  get 'sign_up', to: 'registrations#create'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
